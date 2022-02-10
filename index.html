@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b8one</title>
+
+  <!-- Google Fonts Start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts End -->
+
+  <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo-link">
+        <img class="header__logo" src="./assets/media/img/logo.svg" alt="Logo b8one" title="b8one" />
+      </a>
+
+      <div class="header__search-container">
+        <input class="header__search-field" type="text" name="searchProduct" placeholder="What are you looking for?" />
+
+        <button class="header__btn-search">
+          <img class="header__search-icon" src="./assets/media/img/icons/search.svg" alt="search" />
+        </button>
+      </div>
+
+      <div class="header__sign-in-container">
+        <a class="header__sign-in-link" href="#">
+          <img class="header__sign-in-icon icon" src="./assets/media/img/icons/sign-in.svg" alt="sign-in" />
+
+          <span class="header__text-sign-in">
+            SIGN IN
+          </span>
+        </a>
+      </div>
+
+      <div class="header__wishlist-container">
+        <a class="header__wishlist-link" href="#" >
+          <img class="header__wishlist-icon icon" src="./assets/media/img/icons/heart.svg" alt="wishlist" />
+      
+          <span class="header__text-wishlist">
+            WISHLIST
+          </span>
+        </a>
+      </div>
+
+      <div class="header__bag-container">
+        <img class="header__bag-icon icon" src="./assets/media/img/icons/bag.svg" alt="sacola" />
+        <span class="header__item-in-bag"></span>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <div class="nav__container">
+        <ul class="nav__link-group">
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              Electronics
+            </a>
+          </li>
+          
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              Smart Home
+            </a>
+          </li>
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              Computers
+            </a>
+          </li>
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              Smartphones
+            </a>
+          </li>
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              New in Furnitures
+            </a>
+          </li>
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              Home & Kitchen
+            </a>
+          </li>
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              Video Game Sale
+            </a>
+          </li>
+          <li class="nav__link-container">
+            <a href="#" class="nav__link">
+              Holiday Deals
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main" id="main">
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__container">
+        <ul class="breadcrumbs__group">
+          <li class="breadcrumbs__link-container">
+            <a href="#" class="breadcrumbs__link">
+              Home
+            </a>
+          </li>
+
+          <span class="breadcrumbs__arrow-right">
+            >
+          </span>
+
+          <li class="breadcrumbs__link-container">
+            <a href="#" class="breadcrumbs__link">
+              Electronics
+            </a>
+          </li>
+
+          <span class="breadcrumbs__arrow-right">
+            >
+          </span>
+
+          <li class="breadcrumbs__link-container">
+            <a href="#" class="breadcrumbs__link current-route">
+              Computers
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="product" id="product">
+      <div class="product__container">
+        <div class="product__image-container">
+          <img class="product__image" id="product__image" src="./assets/media/img/products/macbook-pro-space-gray.jpg" alt="macbook pro" />
+
+          <span class="product__image-bottom-text">
+            Roll over image to zoom in
+          </span>
+        </div>
+
+        <div class="product__info">
+          <div class="product__info-top">
+            <span class="product__brand">Apple</span>
+            
+            <h1 class="product__title">
+              Apple
+              <span class="product--size-dynamic" id="js-product-size">13.3"</span>
+              MacBook Pro, 2.6GHz Intel Core i7 6 Core 9th Gen (Late 2019,
+              <span class="product--name-color" id="js-product-name-color">Space Gray</span>
+              )
+            </h1>
+            
+            <div class="product__space-between">
+              <span class="product__ref">Ref: 000000</span>
+              <a class="product__link-about-product" href="#about-product">
+                read full description
+              </a>
+            </div>
+          </div>
+
+          <div class="product__info-bottom">
+            <div class="product__characteristics">
+              <div class="product__color">
+                <span class="product__color-title">
+                  Color: 
+                  <span class="product--name-color" id="js-product-name-color">Space Gray</span>
+                </span>
+
+                <div class="product__btn-colors-container">
+                  <button class="product__btn-color btn--space-gray" type="button" value="space-gray.jpg"></button>
+                  <button class="product__btn-color btn--pink" type="button" value="pink.jpg"></button>
+                  <button class="product__btn-color btn--silver" type="button" value="silver.png"></button>
+                </div>
+              </div>
+
+              <div class="product__size">
+                <span class="product__size-title">Screen Size:</span>
+
+                <div class="product__btn-sizes-container">
+                  <button class="product__btn-size" type="button" value="13.3">13.3"</button>
+                  <button class="product__btn-size" type="button" value="18">18"</button>
+                  <button class="product__btn-size btn--disable" type="button" value="21">21"</button>
+                </div>
+              </div>
+
+              <div class="product__shipping">
+                <img class="product__shipping-icon" src="./assets/media/img/icons/delivery.svg" alt="shipping" />
+
+                <div class="product__text-shipping-container">
+                  <span class="product__title-shipping">Shipping</span>
+
+                  <p class="product__description-shipping">
+                    Receive or pickup your products!
+                  </p>
+
+                  <a href="#" class="product__link-other-shipments">See shipping options</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__purchase-summary">
+              <div class="product__price-container">
+                <h3 class="product__final-price" id="product__final-price">
+                  $ 3,199.00
+                </h3>
+
+                <span class="product__old-price" id="product__old-price">
+                  $ 3,600.00
+                </span>
+
+                <span class="product__value-saved" id="product__value-saved">
+                  $ 401
+                </span>
+              </div>
+
+              <div class="product__quantity">
+                <div class="product__quantity-container">
+                  <button class="product__btn-quantity" id="product__btn-quantity" type="button">
+                    <img class="product__minus-icon" src="./assets/media/img/icons/minus.svg" alt="minus icon" />
+                  </button>
+                  <span class="product__final-quantity" id="product__final-quantity">
+                    01
+                  </span>
+                  <button class="product__btn-quantity" id="product__btn-quantity" type="button">
+                    <img class="product__plus-icon" src="./assets/media/img/icons/plus.svg" alt="plus icon" />
+                  </button>
+                </div>
+
+                <span class="product__quantity-stock">
+                  <span class="product_quantity-stock-txt-red" id="quantity-stock">Only 3 left in Stock</span>
+                  Buy now!
+                </span>
+              </div>
+              
+              <div class="product__actions">
+                <button class="product__btn-add-to-cart" type="button">
+                  ADD TO CART
+                </button>
+
+                <button class="product__btn-buy" type="button">
+                  <img class="product__bag-icon" src="./assets/media/img/icons/bag.svg" alt="sacola" />
+                  BUY NOW
+                </button>
+
+                <span class="product__text-bottom">
+                  Shipped by <strong>Store 1</strong> Sold by <strong>Store 2</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shelf" id="shelf">
+      <div class="shelf__container">
+        <div class="shelf__space-bettewn">
+          <h3 class="shelft__title">
+            Customers also bought these products
+          </h3>
+
+          <a class="shelf__link-to-all-products" href="#">
+            See all products
+          </a>
+        </div>
+
+
+        <ul class="shelf__card-group">
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <div class="shelf__card-value-saved-container">
+                <span class="shelf__card-discount-rate">-0%</span>
+                <span class="shelf__card-value-saved">SAVE $ 0</span>
+              </div>
+
+              <img class="shelf__card-image" src="./assets/media/img/products/product-1.jpg" alt="producto 1" />
+
+              <p class="shelft__card-title">
+                VIZIO 65" Class 4K UHD Quantum SmartCast Sma...
+              </p>
+
+              <div class="shelf__card-price-container">
+                <span class="shelf__card-old-price">
+                  $ 748.00
+                </span>
+                <span class="shelft__card-final-price">
+                  $ 548.00
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+          
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-2.jpg" alt="producto 2" />
+
+              <p class="shelft__card-title">
+                Apple Watch Series 5 GPS, 44mm Space Gray Alumi...
+              </p>
+
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 449.00
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <div class="shelf__card-value-saved-container">
+                <span class="shelf__card-discount-rate">-0%</span>
+                <span class="shelf__card-value-saved">SAVE $ 0</span>
+              </div>
+
+              <img class="shelf__card-image" src="./assets/media/img/products/product-3.jpg" alt="producto 3" />
+
+              <p class="shelft__card-title">
+                The Pioneer Woman Cowboy Rustic 14-Piece...
+              </p>
+
+              <div class="shelf__card-price-container">
+                <span class="shelf__card-old-price">
+                  $ 69.97
+                </span>
+                <span class="shelft__card-final-price">
+                  $ 59.00
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-4.jpg" alt="producto 4" />
+
+              <p class="shelft__card-title">
+                onn. Wireless Charging Pad with LED Night Light
+              </p>
+
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 12.88
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-5.jpg" alt="producto 5" />
+
+              <p class="shelft__card-title">
+                Office Chair Ergonomic Desk Chair Mesh Comp...
+              </p>
+
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 54.99
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-6.jpg" alt="producto 6" />
+
+              <p class="shelft__card-title">
+                Hershey, Halloween Assorted Candy Nuts...
+              </p>
+
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 9.94
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="shelf__container">
+        <div class="shelf__space-bettewn">
+          <h3 class="shelft__title">
+            Customers also viewed these products
+          </h3>
+      
+          <a class="shelf__link-to-all-products" href="#">
+            See all products
+          </a>
+        </div>
+      
+      
+        <ul class="shelf__card-group">
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <div class="shelf__card-value-saved-container">
+                <span class="shelf__card-discount-rate">-0%</span>
+                <span class="shelf__card-value-saved">SAVE $ 0</span>
+              </div>
+          
+              <img class="shelf__card-image" src="./assets/media/img/products/product-7.jpg" alt="producto 7" />
+          
+              <p class="shelft__card-title">
+                VIZIO 65" Class 4K UHD Quantum SmartCast Sma...
+              </p>
+          
+              <div class="shelf__card-price-container">
+                <span class="shelf__card-old-price">
+                  $ 748.00
+                </span>
+                <span class="shelft__card-final-price">
+                  $ 548.00
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+          
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-8.jpg" alt="producto 8" />
+          
+              <p class="shelft__card-title">
+                Apple Watch Series 5 GPS, 44mm Space Gray Alumi...
+              </p>
+          
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 449.00
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+          
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <div class="shelf__card-value-saved-container">
+                <span class="shelf__card-discount-rate">-0%</span>
+                <span class="shelf__card-value-saved">SAVE $ 0</span>
+              </div>
+          
+              <img class="shelf__card-image" src="./assets/media/img/products/product-9.jpg" alt="producto 9" />
+          
+              <p class="shelft__card-title">
+                The Pioneer Woman Cowboy Rustic 14-Piece...
+              </p>
+          
+              <div class="shelf__card-price-container">
+                <span class="shelf__card-old-price">
+                  $ 69.97
+                </span>
+                <span class="shelft__card-final-price">
+                  $ 59.00
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+          
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-10.jpg" alt="producto 10" />
+          
+              <p class="shelft__card-title">
+                onn. Wireless Charging Pad with LED Night Light
+              </p>
+          
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 12.88
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+          
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-11.jpg" alt="producto 11" />
+          
+              <p class="shelft__card-title">
+                Office Chair Ergonomic Desk Chair Mesh Comp...
+              </p>
+          
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 54.99
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+          
+          <li class="shelf__card-item">
+            <a class="shelf__card-link" href="#">
+              <img class="shelf__card-image" src="./assets/media/img/products/product-12.jpg" alt="producto 12" />
+          
+              <p class="shelft__card-title">
+                Hershey, Halloween Assorted Candy Nuts...
+              </p>
+          
+              <div class="shelf__card-price-container">
+                <span class="shelft__card-final-price">
+                  $ 9.94
+                </span>
+                <span class="shelf__card-payment-installments">
+                  10x $ 320,00
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="banner" id="banner">
+      <div class="banner__container">
+        <img class="banner__img" src="./assets/media/img/banners/banner.png" alt="banner" />
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="about__container">
+        <article class="about__description">
+          <h4 class="about__title">
+            About this item
+          </h4>
+
+        <p class="about__disclaimer">
+          We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we
+          have not verified it. See our disclaimer
+        </p>
+
+        <p class="about__info">
+          iPad Air is thin, light, and powerful. It features the A12 Bionic chip with Neural Engine, which uses real-time machine
+          learning to transform the way you experience photos, gaming, augmented reality (AR), and more. A beautiful 10.5-inch
+          Retina display with True Tone for easier viewing in all kinds ofÂ lighting environments.1Â Support for Apple Pencil and
+          the Smart Keyboard.Â 2Â An 8MP back camera and 7MP FaceTime HD camera. Touch ID and Apple Pay. And with all-day battery
+          life,3Â fast Wi-Fi and Gigabit-class LTE,Â 4Â and over a million iPad apps on the App Store, iPad Air is ready for any
+          task, anywhere.
+        </p>
+
+        <ul class="about__characteristics-group">
+          <li class="about__item-characteristic">
+            • 10.5-inch Retina display with True Tone and wide color1 ’’
+          </li>
+
+          <li class="about__item-characteristic">
+            • A12 Bionic chip
+          </li>
+
+          <li class="about__item-characteristic">
+            • Touch ID fingerprint sensor and Apple Pay
+          </li>
+
+          <li class="about__item-characteristic">
+            • 8MP back camera, 7MP FaceTime HD front camera
+          </li>
+
+          <li class="about__item-characteristic">
+            • Stereo speakers
+          </li>
+          
+          <li class="about__item-characteristic">
+            • 802.11ac Wi-Fi and Gigabit-class LTE cellular data4
+          </li>
+          
+          <li class="about__item-characteristic">
+            • Up to 10 hours of battery life3
+          </li>
+          
+          <li class="about__item-characteristic">
+            • Lightning connector for charging and accessories
+          </li>
+          
+          <li class="about__item-characteristic">
+            • iOS 12 with Group FaceTime, shared augmented reality experiences, Screen Time, and more
+          </li>
+          
+        </ul>
+        
+        <p class="about__footer">
+          Go to 
+          <a class="about__link-footer" href="#">apple.com/ipad-air/specs</a>
+          for a complete set.
+        </p>
+      </article>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter__container">
+        <h3 class="newsletter__title">
+          Get news & special offers!
+        </h3>
+
+        <form class="newsletter__form">
+          <div class="newsletter__input-container">
+            <img class="newsletter__email-icon" src="./assets/media/img/icons/email.svg" alt="email icon" />
+
+            <input class="newsletter__email-input" type="email" name="email" id="email" placeholder="example@email.com">
+          </div>
+
+          <button class="newsletter__btn-submit" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer__top">
+        <div class="footer__links-groups">
+          <div class="footer__link-group-container">
+            <h5 class="footer__title-group">
+              Section name
+            </h5>
+
+            <ul class="footer__links-group">
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__link-group-container">
+            <h5 class="footer__title-group">
+              Section name
+            </h5>
+
+            <ul class="footer__links-group">
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">
+                  Sitemap link
+                </a>               
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__actions">
+          <button class="footer__btn-call">
+            <img class="footer__call-icon" src="./assets/media/img/icons/phone.svg" alt="botão de ligar" />  
+            CALL US
+          </button>
+
+          <button class="footer__btn-send-message">
+            <img class="footer__send-message-icon" src="./assets/media/img/icons/email-white.svg" alt="botão de enviar mensagem" />
+            SEND A MESSAGE
+          </button>
+
+          <span class="footer__link-opening-hours">
+            Click here to see our opening hours
+          </span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-container">
+          <div class="footer__space-between">
+            <div class="footer__payment-methods">
+              <ul class="footer__payment-methods-group">
+                <li class="footer__payment-method-item">
+                  <img class="footer__payment-method-icon" src="./assets/media/img/icons/mastercard.svg" alt="mastercard" />
+                </li>
+
+                <li class="footer__payment-method-item">
+                  <img class="footer__payment-method-icon" src="./assets/media/img/icons/visa.svg" alt="visa" />
+                </li>
+
+                <li class="footer__payment-method-item">
+                  <img class="footer__payment-method-icon" src="./assets/media/img/icons/amex.svg" alt="amex" />
+                </li>
+
+                <li class="footer__payment-method-item">
+                  <img class="footer__payment-method-icon" src="./assets/media/img/icons/dinersclub.svg" alt="diners club" />
+                </li>
+
+                <li class="footer__payment-method-item">
+                  <img class="footer__payment-method-icon" src="./assets/media/img/icons/paypal.svg" alt="paypal" />
+                </li>
+
+                <li class="footer__payment-method-item">
+                  <img class="footer__payment-method-icon" src="./assets/media/img/icons/googlepay.svg" alt="google pay" />
+                </li>
+
+                <li class="footer__payment-method-item">
+                  <img class="footer__payment-method-icon" src="./assets/media/img/icons/applepay.svg" alt="apple pay" />
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__social-media">
+              <ul class="footer__social-media-group">
+                <li class="footer__social-media-item">
+                  <a class="footer__social-media-link" href="https://www.facebook.com/" title="facebook" target="_blank" rel="noreferrer">
+                    <img class="footer__social-media-icon" src="./assets/media/img/icons/facebook.svg" alt="facebook" />
+                  </a>
+                </li>
+
+                <li class="footer__social-media-item">
+                  <a class="footer__social-media-link" href="https://instagram.com/" title="instagram" target="_blank" rel="noreferrer">
+                    <img class="footer__social-media-icon" src="./assets/media/img/icons/instagram.svg" alt="instagram" />
+                  </a>
+                </li>
+
+                <li class="footer__social-media-item">
+                  <a class="footer__social-media-link" href="http://twitter.com/" title="twitter" target="_blank" rel="noreferrer">
+                    <img class="footer__social-media-icon" src="./assets/media/img/icons/twitter.svg" alt="twitter" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__copyright-and-credits">
+            <span class="footer__copyright">
+              2020 @ All Right Reserved to b8one
+            </span>
+
+            <p class="footer__supplementary-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua do amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt amet.
+            </p>
+
+            <div class="footer__credits">
+              <span class="footer__vtex-credits">
+                Made with 
+                <img class="footer__vtex-icon" src="./assets/media/img/icons/vtex.svg" alt="vtex icon" />
+              </span>
+
+              <span class="footer__b8one-credits">
+                Build with ❤️️ by
+                <img class="footer__b8one-icon" src="./assets/media/img/icons/b8one.svg" alt="b8one icon" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>
