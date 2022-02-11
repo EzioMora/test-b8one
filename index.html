@@ -18,7 +18,7 @@
   <header class="header" id="header">
     <div class="header__container">
       <a href="index.html" class="header__logo-link">
-        <img class="header__logo" src="./assets/media/img/logo.svg" alt="Logo b8one" title="b8one" />
+        <img class="header__logo" src="./assets/media/img/logo.jpg" alt="Logo b8one" title="b8one" />
       </a>
 
       <div class="header__search-container">
@@ -140,7 +140,9 @@
     <section class="product" id="product">
       <div class="product__container">
         <div class="product__image-container">
-          <img class="product__image" id="product__image" src="./assets/media/img/products/macbook-pro-space-gray.jpg" alt="macbook pro" />
+          <div class="product__image-zoom" id="js-image-zoom">
+            <img class="product__image" id="product__image" src="./assets/media/img/products/macbook-pro-space-gray.jpg" alt="macbook pro" />
+          </div>
 
           <span class="product__image-bottom-text">
             Roll over image to zoom in
@@ -153,7 +155,7 @@
             
             <h1 class="product__title">
               Apple
-              <span class="product--size-dynamic" id="js-product-size">13.3"</span>
+              <span class="product--size-dynamic" id="js-product-size">13.3</span>"
               MacBook Pro, 2.6GHz Intel Core i7 6 Core 9th Gen (Late 2019,
               <span class="product--name-color" id="js-product-name-color">Space Gray</span>
               )
@@ -176,9 +178,9 @@
                 </span>
 
                 <div class="product__btn-colors-container">
-                  <button class="product__btn-color btn--space-gray" type="button" value="space-gray.jpg"></button>
-                  <button class="product__btn-color btn--pink" type="button" value="pink.jpg"></button>
-                  <button class="product__btn-color btn--silver" type="button" value="silver.png"></button>
+                  <button class="product__btn-color btn--space-gray" id="js-btn-color"  type="button" value="space-gray.jpg"></button>
+                  <button class="product__btn-color btn--pink" id="js-btn-color" type="button" value="pink.jpg"></button>
+                  <button class="product__btn-color btn--silver" id="js-btn-color" type="button" value="silver.png"></button>
                 </div>
               </div>
 
@@ -207,36 +209,36 @@
               </div>
             </div>
 
-            <div class="product__purchase-summary">
+            <div class="product__purchase-summary" id="js-product-value" data-product-value="3600" >
               <div class="product__price-container">
-                <h3 class="product__final-price" id="product__final-price">
+                <h3 class="product__final-price" id="js-final-price">
                   $ 3,199.00
                 </h3>
 
-                <span class="product__old-price" id="product__old-price">
+                <span class="product__old-price" id="js-old-price">
                   $ 3,600.00
                 </span>
 
-                <span class="product__value-saved" id="product__value-saved">
+                <span class="product__value-saved" id="js-value-saved">
                   $ 401
                 </span>
               </div>
 
               <div class="product__quantity">
                 <div class="product__quantity-container">
-                  <button class="product__btn-quantity" id="product__btn-quantity" type="button">
+                  <button class="product__btn-quantity" id="js-btn-quantity" data-type-btn="minus" type="button">
                     <img class="product__minus-icon" src="./assets/media/img/icons/minus.svg" alt="minus icon" />
                   </button>
-                  <span class="product__final-quantity" id="product__final-quantity">
+                  <span class="product__final-quantity" id="js-final-quantity">
                     01
                   </span>
-                  <button class="product__btn-quantity" id="product__btn-quantity" type="button">
+                  <button class="product__btn-quantity" id="js-btn-quantity" data-type-btn="plus" type="button">
                     <img class="product__plus-icon" src="./assets/media/img/icons/plus.svg" alt="plus icon" />
                   </button>
                 </div>
 
                 <span class="product__quantity-stock">
-                  <span class="product_quantity-stock-txt-red" id="quantity-stock">Only 3 left in Stock</span>
+                  <span class="product_quantity-stock-txt-red" id="js-quantity-stock">Only 3 left in Stock</span>
                   Buy now!
                 </span>
               </div>
@@ -273,8 +275,149 @@
           </a>
         </div>
 
+        <div class="shelf-swiper swiper">
+          <div class="shelf__card-group swiper-wrapper">
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <div class="shelf__card-value-saved-container">
+                  <span class="shelf__card-discount-rate">-0%</span>
+                  <span class="shelf__card-value-saved">SAVE $ 0</span>
+                </div>
+              
+                <img class="shelf__card-image" src="./assets/media/img/products/product-1.jpg" alt="producto 1" />
+              
+                <p class="shelft__card-title">
+                  VIZIO 65" Class 4K UHD Quantum SmartCast Sma...
+                </p>
+              
+                <div class="shelf__card-price-container">
+                  <span class="shelf__card-old-price">
+                    $ 748.00
+                  </span>
+                  <span class="shelft__card-final-price">
+                    $ 548.00
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
 
-        <ul class="shelf__card-group">
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-2.jpg" alt="producto 2" />
+              
+                <p class="shelft__card-title">
+                  Apple Watch Series 5 GPS, 44mm Space Gray Alumi...
+                </p>
+              
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 449.00
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <div class="shelf__card-value-saved-container">
+                  <span class="shelf__card-discount-rate">-0%</span>
+                  <span class="shelf__card-value-saved">SAVE $ 0</span>
+                </div>
+              
+                <img class="shelf__card-image" src="./assets/media/img/products/product-3.jpg" alt="producto 3" />
+              
+                <p class="shelft__card-title">
+                  The Pioneer Woman Cowboy Rustic 14-Piece...
+                </p>
+              
+                <div class="shelf__card-price-container">
+                  <span class="shelf__card-old-price">
+                    $ 69.97
+                  </span>
+                  <span class="shelft__card-final-price">
+                    $ 59.00
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-4.jpg" alt="producto 4" />
+              
+                <p class="shelft__card-title">
+                  onn. Wireless Charging Pad with LED Night Light
+                </p>
+              
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 12.88
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-5.jpg" alt="producto 5" />
+              
+                <p class="shelft__card-title">
+                  Office Chair Ergonomic Desk Chair Mesh Comp...
+                </p>
+              
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 54.99
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-6.jpg" alt="producto 6" />
+              
+                <p class="shelft__card-title">
+                  Hershey, Halloween Assorted Candy Nuts...
+                </p>
+              
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 9.94
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="shelf__btn-prev swiper-button-prev">
+            <img class="shelf__arrow-left" src="./assets/media/img/icons/arrow.svg" alt="flecha izquerda" />
+          </div>
+          <div class="shelf__btn-next swiper-button-next">
+            <img class="shelft__arrow-right" src="./assets/media/img/icons/arrow.svg" alt="flecha direita" />
+          </div>
+        </div>
+
+
+        <!-- <ul class="shelf__card-group">
           <li class="shelf__card-item">
             <a class="shelf__card-link" href="#">
               <div class="shelf__card-value-saved-container">
@@ -404,7 +547,7 @@
               </div>
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
 
       <div class="shelf__container">
@@ -417,9 +560,151 @@
             See all products
           </a>
         </div>
+
+        <div class="shelf-swiper swiper">
+          <div class="shelf__card-group swiper-wrapper">
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <div class="shelf__card-value-saved-container">
+                  <span class="shelf__card-discount-rate">-0%</span>
+                  <span class="shelf__card-value-saved">SAVE $ 0</span>
+                </div>
+        
+                <img class="shelf__card-image" src="./assets/media/img/products/product-7.jpg" alt="producto 7" />
+        
+                <p class="shelft__card-title">
+                  VIZIO 65" Class 4K UHD Quantum SmartCast Sma...
+                </p>
+        
+                <div class="shelf__card-price-container">
+                  <span class="shelf__card-old-price">
+                    $ 748.00
+                  </span>
+                  <span class="shelft__card-final-price">
+                    $ 548.00
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+        
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-8.jpg" alt="producto 8" />
+        
+                <p class="shelft__card-title">
+                  Apple Watch Series 5 GPS, 44mm Space Gray Alumi...
+                </p>
+        
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 449.00
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+        
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <div class="shelf__card-value-saved-container">
+                  <span class="shelf__card-discount-rate">-0%</span>
+                  <span class="shelf__card-value-saved">SAVE $ 0</span>
+                </div>
+        
+                <img class="shelf__card-image" src="./assets/media/img/products/product-9.jpg" alt="producto 9" />
+        
+                <p class="shelft__card-title">
+                  The Pioneer Woman Cowboy Rustic 14-Piece...
+                </p>
+        
+                <div class="shelf__card-price-container">
+                  <span class="shelf__card-old-price">
+                    $ 69.97
+                  </span>
+                  <span class="shelft__card-final-price">
+                    $ 59.00
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+        
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-10.jpg" alt="producto 10" />
+        
+                <p class="shelft__card-title">
+                  onn. Wireless Charging Pad with LED Night Light
+                </p>
+        
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 12.88
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+        
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-11.jpg" alt="producto 11" />
+        
+                <p class="shelft__card-title">
+                  Office Chair Ergonomic Desk Chair Mesh Comp...
+                </p>
+        
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 54.99
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+        
+            <div class="shelf__card-item swiper-slide">
+              <a class="shelf__card-link" href="#">
+                <img class="shelf__card-image" src="./assets/media/img/products/product-12.jpg" alt="producto 12" />
+        
+                <p class="shelft__card-title">
+                  Hershey, Halloween Assorted Candy Nuts...
+                </p>
+        
+                <div class="shelf__card-price-container">
+                  <span class="shelft__card-final-price">
+                    $ 9.94
+                  </span>
+                  <span class="shelf__card-payment-installments">
+                    10x $ 320,00
+                  </span>
+                </div>
+              </a>
+            </div>
+            
+          </div>
+
+          <div class="shelf__btn-prev swiper-button-prev">
+            <img class="shelf__arrow-left" src="./assets/media/img/icons/arrow.svg" alt="flecha izquerda" />
+          </div>
+          <div class="shelf__btn-next swiper-button-next">
+            <img class="shelft__arrow-right" src="./assets/media/img/icons/arrow.svg" alt="flecha direita" />
+          </div>
+        </div>
       
       
-        <ul class="shelf__card-group">
+        <!-- <ul class="shelf__card-group">
           <li class="shelf__card-item">
             <a class="shelf__card-link" href="#">
               <div class="shelf__card-value-saved-container">
@@ -549,18 +834,31 @@
               </div>
             </a>
           </li>
-        </ul>
+        </ul> -->
+        
+
       </div>
     </section>
 
-    <div class="banner" id="banner">
-      <div class="banner__container">
-        <img class="banner__img" src="./assets/media/img/banners/banner.png" alt="banner" />
+    <div class="banner">
+      <div class="banner__container banner-swiper swiper" id="banner">
+        <div class="banner__swiper-wrapper swiper-wrapper">
+          <div class="banner__slide swiper-slide">
+            <img class="banner__img" src="./assets/media/img/banners/banner.png" alt="banner" />
+          </div>
+        </div>
+
+        <div class="banner__btn-prev swiper-button-prev">
+          <img class="banner__arrow-left" src="./assets/media/img/icons/arrow.svg" alt="flecha izquerda" />
+        </div>
+        <div class="banner__btn-next swiper-button-next">
+          <img class="bannert__arrow-right" src="./assets/media/img/icons/arrow.svg" alt="flecha direita" />
+        </div>
       </div>
     </div>
 
     <section class="about" id="about">
-      <div class="about__container">
+      <div class="about__container" id="about-product">
         <article class="about__description">
           <h4 class="about__title">
             About this item
@@ -797,9 +1095,9 @@
             SEND A MESSAGE
           </button>
 
-          <span class="footer__link-opening-hours">
+          <a href="#" class="footer__link-opening-hours">
             Click here to see our opening hours
-          </span>
+          </a>
         </div>
       </div>
 
